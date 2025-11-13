@@ -1,0 +1,43 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 2rem;
+  background-color: #f5fdf8; /* light greenish background */
+  color: #036F3E;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 1rem;
+  color: #036F3E80; /* lighter green */
+  line-height: 1.5rem;
+}
+
+/* Optional subtle fade-in animation */
+.about-title,
+.about-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.about-text {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

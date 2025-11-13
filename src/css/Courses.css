@@ -1,0 +1,43 @@
+.courses-coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: #f5fdf8; /* light greenish background */
+  padding: 2rem;
+}
+
+.courses-coming-soon h2 {
+  font-size: 2.5rem;
+  color: #036F3E;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.courses-coming-soon p {
+  font-size: 1.2rem;
+  color: #036F3E80; /* lighter green */
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.5rem;
+}
+
+/* Optional: subtle animation for text appearance */
+.courses-coming-soon h2,
+.courses-coming-soon p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.courses-coming-soon p {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,56 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f5fdf8;
+}
+
+/* Hero Content */
+.hero-content h1 { font-size: 4rem; font-weight: bold; }
+.hero-content p { font-size: 1.2rem; color: #036F3E80; }
+
+/* IoT Devices */
+.device {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.device-sensor { top: 5%; left: 5%; }           /* Top-left */
+.device-microcontroller { top: 5%; right: 5%; } /* Top-right */
+.device-node { bottom: 5%; left: 5%; }          /* Bottom-left */
+.device-cloud { bottom: 5%; right: 5%; }   
+
+.device-gateway { top: 15%; left: 25%; }        /* Top-left-middle */
+.device-hub { top: 15%; right: 25%; }            /* Center-ish */
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Data flow dots */
+.data-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #00FF99;
+  border-radius: 50%;
+  animation: moveData 3s linear infinite;
+}
+
+.data-dot-1 { top: 20%; left: 15%; animation-delay: 0s; }
+.data-dot-2 { bottom: 10%; right: 15%; animation-delay: 1.5s; }
+
+@keyframes moveData {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(50px,-50px); }
+  100% { transform: translate(0,0); }
+}
+.device-motor { top: 60%; left: 35%; }          /* Below text, left */
+.device-actuator { top: 60%; right: 35%; } 

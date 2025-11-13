@@ -1,0 +1,144 @@
+/* Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: #036F3E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Navbar right container */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Home button */
+.nav-home {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.nav-home:hover {
+  background-color: #02994f;
+}
+
+/* Other links */
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #02994f;
+}
+
+/* Search bar */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 0 0.2rem;
+  min-width: 180px;
+}
+
+.search-input {
+  border: none;
+  padding: 0.4rem 0.5rem;
+  outline: none;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.search-btn {
+  border: none;
+  background-color: #00FF99;
+  color: #036F3E;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.search-btn:hover {
+  background-color: #00cc7a;
+}
+
+/* Explore dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #036F3E;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.dropbtn:hover {
+  background-color: #02994f;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  background-color: #ffffff;
+  min-width: 250px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  gap: 2rem;
+  z-index: 200;
+}
+
+.dropdown-column h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #036F3E;
+}
+
+.dropdown-column a {
+  display: block;
+  color: #036F3E;
+  text-decoration: none;
+  margin: 0.2rem 0;
+}
+
+.dropdown-column a:hover {
+  text-decoration: underline;
+}
