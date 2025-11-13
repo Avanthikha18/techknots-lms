@@ -10,13 +10,13 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAh-NqNTk4Xrn3DGuitP-56dzHXTAQo7ps",
-  authDomain: "techknots-lms.firebaseapp.com",
-  projectId: "techknots-lms",
-  storageBucket: "techknots-lms.firebasestorage.app",
-  messagingSenderId: "742713793921",
-  appId: "1:742713793921:web:5b76be5e35ced1da6c9c80",
-  measurementId: "G-85CP156SJB"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
